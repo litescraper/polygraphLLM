@@ -25,7 +25,7 @@ import rank_bm25
 import diskcache
 from bs4 import BeautifulSoup
 
-SERPER_URL = "https://google.serper.dev/search"
+SERPER_URL = f'{os.getenv("SERPER_BASE_URL", "https://google.serper.dev").rstrip("/")}/search'
 
 
 class GoogleRetriever:

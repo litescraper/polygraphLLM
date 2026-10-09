@@ -489,3 +489,12 @@ Any contributions you make are greatly appreciated. For detailed contributing in
 ## License
 
 [Apache License 2.0](LICENSE).
+
+
+## Serper-compatible endpoints
+
+Set `SERPER_BASE_URL` to a compatible API base (without `/search`) and
+`SERPER_API_KEY` to that provider's key. The default remains
+`https://google.serper.dev`; trailing slashes are removed before adding the
+search route. Other Serper routes use the same base where present.
+Support any Serper.dev-compatible endpoint (like litescrape.com, serpbase.dev, serpensapi.org, and others).
